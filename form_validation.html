@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DoM</title>
+  </head>
+  <body>
+    <form action="#" method="post">
+        <h2>FORM VALIDATION</h2>
+        <input type="text" id="email" placeholder="EMAIl">
+        <input type="password" id="password" placeholder="enter password">
+        <input type="number" id="age" value="submit">
+        <input type="submit" id="submit" value="submit">
+
+    <script>
+     var email=document.getElementById("email");
+     var password=document.getElementById("password");
+     var submit=document.getElementById("submit");
+     var number=document.getElementById("number");
+
+     submit.onclick=function(){
+        // if(email.value!="" && password.value!=""){
+        //     document.write("SUCCESS");
+        // }
+
+        if(age.value>=18 && age.value<=80){
+            document.write("SUCCESS");
+        }
+     }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DoM</title>
+    <style>
+      #box {
+        background-color: red;
+        width: 100px;
+        height: 100px;
+        transition: 2s ease all;
+        /* it will  slow down the process */
+      }
+    </style>
+  </head>
+  <body>
+    <button id="btn">CLICK ME</button>
+    <div id="box">BOX</div>
+
+    <script>
+      var btn = document.getElementById("btn");
+      var box = document.getElementById("box");
+      btn.onclick = function () {
+        box.style.transform = "translateX(200px)";
+      };
+
+      //   btn.onclick = function () {
+      //     box.style.transform = "scale(2)";
+      //   };
+
+      // to combine
+      btn.onclick = function () {
+        box.style.transform = "translateX(200px) scale(2)";
+      };
+    </script>
+  </body>
+</html>

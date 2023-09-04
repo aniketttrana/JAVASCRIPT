@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DoM for css</title>
+    <style>
+      #btn {
+        color: red;
+        background-color: rgb(95, 182, 114);
+        font-size: 13px;
+        padding: 5px;
+      }
+      .para {
+        font-size: 18px;
+        /* default is 16 px */
+        color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <button id="btn">CLICK ME</button>
+    <p class="para">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi,
+      perspiciatis eius. Voluptatum sapiente eaque rerum velit perferendis nam
+      quasi delectus.
+    </p>
+    <script>
+      var btn = document.getElementById("btn");
+      // to change color
+      btn.style.color = "yellow";
+      btn.style.background = "blue";
+      btn.style.border = "2px solid brown";
+
+      var para = document.getElementsByClassName("para")[0];
+
+      para.style.color = "yellow";
+    </script>
+  </body>
+</html>

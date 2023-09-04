@@ -24,6 +24,13 @@
       document.getElementsByClassName("para")[0].textContent = "WHOLE PARA";
 
       document.getElementsByTagName("p")[1].textContent = "WHOLE PARA";
+
+      document.querySelector("p").textContent = "Query changed";
+      // query selector always select 0 index
+
+      // querySelector(#id),(.class)
+      document.querySelectorAll("p")[1].textContent = "QuerySelctor All";
+      // to make use of indexes use querySelectorAll
     </script>
   </body>
 </html>
