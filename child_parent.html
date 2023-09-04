@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DoM</title>
+   
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      FIRST
+      <ul id="linkbox">
+        <li class="link">LINK1</li>
+        <li class="link">LINK2</li>
+        <li class="link">LINK3</li>
+      </ul>
+      LAST
+    </div>
+
+    <script>
+      var linkbox = document.getElementById("linkbox");
+      //   document.write(linkbox.parentNode);
+      //   //   OUTPUT:: [object HTMLDivElement]
+      //   //   document.write = to show it in browser
+      //   document.write(linkbox.parentNode.children[0]);
+      //   //   [object HTMLUListElement]
+
+      //   document.write(linkbox.parentNode.firstChild);
+      //   //   [object Text]
+
+      //   document.write(linkbox.parentNode.firstChild.nodeValue);
+      //   //   FIRST
+      //   document.write(linkbox.parentNode.lastChild.nodeValue);
+      //   //LAST
+
+      var link1 = document.getElementsByClassName("link")[1];
+      document.write(link1.previousSibling);
+    //   [object Text]
+    // to access another previous sibling
+    document.write(link1.previousSibling.previousSibling);
+    // [object HTMLLIElement]
+
+    document.write(link1.previousSibling.previousSibling.textContent);
+    // LINK1
+
+    document.write(link1.nextSibling.nextSibling.textContent);
+    // LINK3
+    document.write(link1.nextSibling.nextSibling.nodeName);
+    //LI
+    document.write(link1.nextSibling.nextSibling.nodeType);
+//1
+
+// 1 = element
+// 2= attribute
+// 3 = text
+    </script>
+  </body>
+</html>
