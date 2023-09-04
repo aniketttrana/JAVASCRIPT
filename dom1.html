@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DoM1</title>
+  </head>
+  <body>
+    <button id="btn">CLICK ME</button>
+
+    <p class="para">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere,
+      laudantium?
+    </p>
+    <p class="para">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere,
+      laudantium?
+    </p>
+
+    <script>
+      document.getElementById("btn").textContent = "DONT CLICK";
+      //   textContent = to get the content that is inside the id
+
+      document.getElementsByClassName("para")[0].textContent = "WHOLE PARA";
+
+      document.getElementsByTagName("p")[1].textContent = "WHOLE PARA";
+    </script>
+  </body>
+</html>
