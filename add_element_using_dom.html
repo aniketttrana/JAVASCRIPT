@@ -1,22 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Elements by dom</title>
-</head>
-<style>
-
-</style>
-<body>
-
-    <id class="container">
-
-
-        
-    </id>
+  </head>
+  <style></style>
+  <body>
+    <div id="container">
+      <p id="elem1">a</p>
+      <p id="elem2">b</p>
+      <p id="elem3">c</p>
+    </div>
     <script>
+      var a = document.createElement("a");
+      a.href = "https://facebook.com";
+      a.textContent = "facebook";
 
+      //   now to go which id ??
+      //   document.getElementById("container").appendChild(a);
+      var elem2 = document.getElementById("elem2");
+      document.getElementById("container").insertBefore(a, elem2);
+
+      //   a.remove();
+      // to remove the element
+
+    //   document.getElementById("container").removeChild(elem2);
+      document.getElementById("conatiner").replaceChild(a, elem2);
     </script>
-</body>
+  </body>
 </html>
