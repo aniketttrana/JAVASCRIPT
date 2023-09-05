@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Events Demonstartions</title>
+  </head>
+
+  
+    <button id="btn">CLICK ME</button>
+    <script>
+      //     <!-- <button onclick="a()">CLICK ME</button>
+
+      // function a(){
+      //     document.write("The function has been fired");
+      // }
+      // window.onclick=function(){
+      //     document.write("You have clicked");
+      // } -->
+      //   document.getElementById("btn").onclick = function () {
+      //     alert("ON CLICK");
+      //   };
+
+      //   document.getElementById("btn").onmouseover = function () {
+      //     alert("ON CLICK");
+      //   };
+
+      //   document.getElementById("btn").onmouseout = function () {
+      //     alert("ON Mouse OUT");
+      //   };
+
+      //   document.getElementById("btn").onmousedown = function () {
+      //     alert("ON Mouse Down");
+      //   };
+
+      function random() {
+        alert("onclick");
+      }
+      document.getElementById("btn").addEventListener("click", random);
+    </script>
+  </body>
+</html>

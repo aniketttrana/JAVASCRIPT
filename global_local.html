@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Global and Variable Scope</title>
+  </head>
+  <body>
+    <script>
+      // by using var we can access it anywhere
+      // but by using let we can't access it anywhere in program
+      var age = 11;
+      //   here we can access but
+      //   document.write(age);
+      //   if (true) {
+      //     document.write(age);
+      //   }
+
+      if (true) {
+        let age = 12;
+      }
+      document.write(age);
+      //   11    not 12
+
+      //   but iif we write var we can access
+    </script>
+  </body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Timing</title>
+  </head>
+  <body>
+    <script>
+      //   var greetings = window.setTimeout(great, 2000);
+      // 2sec
+      // to end this we use
+      //   window.clearTimeout(greetings);
+      //   function great() {
+      //     alert("Welcome there");
+      //   }
+
+      //   setInterval = it perform operation on interval wise
+      var count = 0;
+
+      var countA = setInterval(msg, 1000);
+
+      function msg() {
+        count = count + 1;
+        document.write(count);
+        if (count == 4) {
+          clearTimeout(countA);
+        }
+      }
+    </script>
+  </body>
+</html>

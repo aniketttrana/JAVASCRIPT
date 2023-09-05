@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Conditional Statements</title>
+  </head>
+  <body>
+    <p class="para">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, saepe.
+    </p>
+    <script>
+      var budget = 20;
+      var penPrice = 100;
+      if (budget == penPrice) {
+        document.write("You can buy this pen");
+      } else {
+        document.write("Price is not equal" + "</br>");
+      }
+
+      var a = 10;
+      var b = 11;
+      //   for use "11"
+      // we can use === [it also check the datatype]
+      if (a > b) {
+        document.write("a is greater than b");
+      } else if (a == b) {
+        document.write("Equal");
+      } else {
+        // document.write("Less than b");
+        document.getElementsByClassName("para")[0].textContent = "Less than b";
+      }
+
+      //   SWITCH STATEMENT
+      //   var trafficLight = "red";
+      //   switch (trafficLight) {
+      //     case "red":
+      //       document.write("STOP");
+      //       break;
+      //     case "yellow":
+      //       document.write("WAIT");
+      //       break;
+      //     case "Green":
+      //       document.write("Go");
+      //       break;
+      //     default:
+      //       document.write("NOTHING IS MATCHED");
+      //   }
+
+      //   ternary Operator
+      //    ?   :
+
+      //   a > b
+      //     ? document.write("a is greater than b")
+      //     : document.write("b is greater than a");
+
+      // Airthmetic operator
+      var c = 1;
+      var d = 2;
+      var e = 3;
+      document.write(d * e);
+    </script>
+  </body>
+</html>
