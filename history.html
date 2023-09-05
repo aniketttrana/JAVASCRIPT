@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HISTORY BOM</title>
+  </head>
+  <body>
+    <form action="#">
+      <input type="text" placeholder="Name" /><br /><br />
+
+      <input type="password" placeholder="Password" /><br /><br />
+
+      <input type="submit" value="submit" /><br /><br />
+
+      <button onclick="goForword()">Forword</button>
+      <button onclick="goBackward()">Backward</button>
+    </form>
+    <script>
+      function goForword() {
+        window.history.forword();
+      }
+      function goBackward() {
+        window.history.back();
+      }
+      //   after submit
+
+      // means it will go to backward or forward in a page
+    </script>
+  </body>
+</html>

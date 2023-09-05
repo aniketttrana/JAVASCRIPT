@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM COLLECTIONS</title>
+  </head>
+  <body>
+    <a id="abc">
+      <span class="abc">a</span>
+      <span class="abc">b</span>
+      <span class="abc">c</span>
+    </a>
+    <br />
+    <a id="xyz">
+      <i class="xyz">x</i>
+      <i class="xyz">y</i>
+      <i class="xyz">z</i>
+    </a>
+    <br />
+    <script>
+      var abc = document.getElementsByClassName("abc");
+        var xyz=document.querySelectorAll(".xyz");
+        document.write(abc.length+ "|" +xyz.length);
+    // 3|3
+
+      
+    </script>
+  </body>
+</html>

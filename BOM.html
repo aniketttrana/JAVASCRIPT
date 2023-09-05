@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Browser Object Model</title>
+  </head>
+  <body>
+    <button onclick="closeWindow()">CLOSE ME</button>
+    <script>
+      // It will give the browser height and width
+      //   document.write(window.innerHeight + " | " + window.innerWidth);
+      //   633 | 681
+      //     var myNewWindow=window.open("","alert",width=400,height="400");
+      // myNewWindow.document.write("My new Window :"+myNewWindow.name);
+      function closeWindow() {
+        window.close();
+      }
+
+      document.write(screen.width + " | " + screen.height + "<br>");
+
+      document.write(
+        window.screen.availWidth + " | " + window.screen.availHeight + "<br>"
+      );
+
+      document.write(
+        window.screen.colorDepth + " | " + window.screen.pixelDepth + "<br>"
+      );
+      //   All modern computers use 24 bit or 32 bit hardware for color resolution
+    </script>
+  </body>
+</html>
