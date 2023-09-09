@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OOPS</title>
+  </head>
+  <body>
+    <script>
+      class bike {
+        model = "22";
+        color = "red";
+        //getter
+        getModel() {
+          return this.model;
+        }
+        //setter
+        setModel(upgradingModel) {
+          this.model = upgradingModel;
+        }
+      }
+      var bike1 = new bike();
+      bike1.color = "blue";
+      document.write(bike1.getModel());
+      bike1.setModel(993);
+      document.write(bike1.getModel());
+    </script>
+  </body>
+</html>

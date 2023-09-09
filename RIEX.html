@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Regular Expression</title>
+  </head>
+  <body>
+    <script>
+      var foodCapitalSmall = "Veggie";
+      var foodSmall = "veggie";
+      var foodCapital = "VEGGIE";
+
+      var capitalsmall = /^[A-Za-z]+$/;
+      var capital = /^[A-Z]+$/;
+      var small = /^[a-z]+$/;
+
+      if (foodCapital.match(capital)) {
+        document.write("capitalized" + "<br>");
+      }
+      if (foodSmall.match(small)) {
+        document.write("small" + "<br>");
+      }
+      if (foodCapitalSmall.match(foodCapitalSmall)) {
+        document.write("Capital and Small" + "<br>");
+      }
+    </script>
+  </body>
+</html>

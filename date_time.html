@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Date and Time</title>
+  </head>
+  <body>
+    <p id="time"></p>
+    <script>
+      var d = new Date();
+      alert(d); // it will show time in gmt
+      alert(d.getDate()); // it will show today date
+      alert(d.getDate() + "-" + d.getMonth() + "-" + d.getFullYear());
+      // to get time
+      alert(d.getTime()); // show in milliseconds
+
+setInterval(function(){
+    var d = new Date();
+    document.getElementById("time").textContent=d.getHours() + ":" + d.getMinutes() + ":" + d.getSeconds();
+},1000)
+
+    </script>
+  </body>
+</html>

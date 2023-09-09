@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RIEX</title>
+  </head>
+  <body>
+    <form action="#" class="form">
+      <h2 class="form-heading"></h2>
+      <input type="text" class="form-input" placeholder="Name" /><br />
+      <input type="tel" class="form-input" placeholder="Phone" /><br />
+      <input type="email" class="form-input" placeholder="Email" /><br />
+      <input type="button" class="form-input form-btn" value="Login" /><br />
+    </form>
+    <script>
+      var btn = document.getElementsByClassName("form-btn")[0];
+      var input = document.getElementsByClassName("form-input");
+      btn.onclick = function () {
+        var regexAlphabets = /^[A-Za-z]+$/;
+        var regexPhone = /^\d{10}$/;
+        var regexEmail = /^\S+@\S+\.\S+$/;
+        if (
+          input[0].value == "" ||
+          input[1].value == "" ||
+          input[2].value == ""
+        ) {
+          alert("Every field must be filled out");
+        } else if (
+          input[0].value.match(regexAlphabets) &&
+          input[1].value.match(regexPhone) &&
+          input[2].value.match(regexEmail)
+        ) {
+          alert("Name has been written correctly");
+        } else {
+          alert("Name should contain only alphabets");
+        }
+      };
+    </script>
+  </body>
+</html>

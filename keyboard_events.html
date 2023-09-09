@@ -1,13 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Keyboard Eventst</title>
-</head>
-<body>
+  </head>
+  <body>
+    <input type="text" id="name1" />
+    <p>Letters Count:<span id ="info"></span> </p>
     <script>
-        
+      //   document.getElementById("name1").onkeypress = function () {
+      //     alert();
+      //   };
+
+      //   document.getElementById("name1").onkeydown = function () {
+      //     alert();
+      //   };
+      //   document.getElementById("name1").onkeyup = function () {
+      //     alert();
+      //   };
+
+         document.getElementById("name1").onkeyup = function () {
+          document.getElementById("info").textContent=document.getElementById("name1").value.length;
+        };
     </script>
-</body>
+  </body>
 </html>
