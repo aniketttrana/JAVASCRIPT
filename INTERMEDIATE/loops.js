@@ -18,14 +18,14 @@ for (var y in obj) {
 
 const person = { fname: "Aniket", lname: "Rana", age: 22 };
 
-for (let x in person) {
+// for (let x in person) {
   // It is used to output only key
   console.log(x);
   // output:
   // fname
   // lname
   // age
-}
+// }
 
 //   for of loop
 var arr = [10, 20, 30];
