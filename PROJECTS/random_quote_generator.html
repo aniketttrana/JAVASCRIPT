@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Random Quote Generator</title>
+  </head>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh; /* Center the body in the viewport */
+      margin: 0; /* Remove default margin to ensure the container aligns properly */
+      background-color: #f0f0f0; /* Background color for the entire page */
+    }
+
+    #container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 50vh;
+      width: 50vh;
+      background-color: #f0f0f0; /* Background color for the container */
+      padding: 20px; /* Add some padding for spacing */
+    }
+
+    #heading {
+      font-size: 24px;
+      color: #333; /* Text color for the heading */
+    }
+
+    #button {
+      background-color: #007bff; /* Button background color */
+      color: #fff; /* Text color for the button */
+      border: none;
+      padding: 20px 30px;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease; /* Add a smooth hover effect */
+    }
+
+    #button:hover {
+      background-color: #0056b3; /* Button background color on hover */
+    }
+
+    #randomQuote {
+      font-style: italic;
+      color: #777; /* Text color for the random quote */
+    }
+  </style>
+  <body>
+    <div id="container">
+      <h1 id="heading">R Q G</h1>
+      <button id="btn">BUTTON</button>
+      <p id="randomQuote">Random Quote</p>
+    </div>
+    <script>
+      window.onload = function () {
+        getRQR();
+      };
+
+      function getRQR() {
+        var btn = document.getElementById("btn");
+
+        btn.onclick = function () {
+          var randomArr = [
+            "Life is what happens when you're busy making other plans. - John Lennon",
+            "The only way to do great work is to love what you do. - Steve Jobs",
+            "In three words I can sum up everything I've learned about life: it goes on. - Robert Frost",
+            "Success is not final, failure is not fatal: It is the courage to continue that counts. - Winston Churchill",
+            "The only thing we have to fear is fear itself. - Franklin D. Roosevelt",
+            "To be yourself in a world that is constantly trying to make you something else is the greatest accomplishment. - Ralph Waldo Emerson",
+            "The journey of a thousand miles begins with one step. - Lao Tzu",
+            "Two things are infinite: the universe and human stupidity; and I'm not sure about the universe. - Albert Einstein",
+            "The only limit to our realization of tomorrow will be our doubts of today. - Franklin D. Roosevelt",
+            "The best time to plant a tree was 20 years ago. The second best time is now. - Chinese Proverb",
+          ];
+          var randomQuote = document.getElementById("randomQuote");
+
+          var rand = Math.floor(Math.random() * 10);
+
+          randomQuote.textContent = randomArr[rand];
+        };
+      }
+    </script>
+  </body>
+</html>
